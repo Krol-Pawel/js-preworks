@@ -6,15 +6,22 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<h1>Zagraj ze mną, zobaczymy ile razy wygrasz</h1>
 	<div class="container">
 		<div id="buttons">
-			<button id="button-rock">Kamień</button>
-			<button id="button-paper">Papier</button>
-			<button id="button-scissors">Nożyce</button>
+			<button class="btn" id="button-rock">Kamień</button>
+			<button class="btn" id="button-paper">Papier</button>
+			<button class="btn" id="button-scissors">Nożyce</button>
 		</div>
 		<div id="messages"></div>
 	</div>
-	<script src="js/functions.js"></script>
-	<script src="js/script.js"></script>
+	<div class="script">
+		<script src="js/functions.js"></script>
+		<script src="js/script.js"></script>
+	</div>
+	<div>
+		<p id="result">Rezultat</p>
+		<span class="input" id="computersite">0</span><span>:</span><span class="input" id="yoursite">0</span>
+	</div>
 </body>
 </html>

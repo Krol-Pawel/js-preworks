@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+
+}
+
+.script {
+    margin: 40 auto;
+    background-color: white;
+    font-size: 50px;
+    font: bold;
+}
+
+body {
+    background-image: url("https://i.postimg.cc/kXZxTDKj/papier-kamien-no-yce.jpg");
+
+}
+
+.btn {
+    max-width: 200px;
+    width: 100%;
+    min-width: 130px;
+    border-width: 2px;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}

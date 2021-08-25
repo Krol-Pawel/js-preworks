@@ -1,8 +1,8 @@
-var argButtonName, ButtonPaper, ButtonRock, ButtonScissors, buttonTest;
-
-ButtonRock = document.getElementById('button-rock');
-ButtonPaper = document.getElementById('button-paper');
-ButtonScissors = document.getElementById('button-scissors');
+let argButtonName, 
+  buttonTest,
+  ButtonRock = document.getElementById('button-rock'),
+  ButtonPaper = document.getElementById('button-paper'),
+  ButtonScissors = document.getElementById('button-scissors');
 
 
 /**
@@ -16,7 +16,7 @@ function buttonClicked(argButtonName) {
 // buttonTest.addEventListener('click', function(){ buttonClicked('Guzik TEST'); });
 
 
-var argComputerMove, argMoveId, argPlayerMove, computerMove, playerInput, playerMove, randomNumber;
+let argComputerMove, argMoveId, argPlayerMove, computerMove, playerInput, playerMove, randomNumber;
 
 /**
  * Describe this function...
@@ -63,8 +63,25 @@ console.log('wylosowana liczba to: ' + randomNumber);
 computerMove = getMoveName(randomNumber);
 console.log('ruch komputera to: ' + computerMove);
 displayResult(playerMove, computerMove);
+// function result()
 }
 
 ButtonRock.addEventListener('click', function(){ buttonClicked('kamień'); });
 ButtonPaper.addEventListener('click', function(){ buttonClicked('papier'); });
 ButtonScissors.addEventListener('click', function(){ buttonClicked('nożyce'); })
+
+function result() {
+
+  var computersite = document.getElementById('computersite').Value
+  console.log (computersite)
+  var yoursite = document.getElementById('yoursite').Value
+  console.log (yoursite)
+  function score(){ 
+    if (printMessage="wygrywasz") {a==1;}
+    else if (printMessage="przegrywasz") {a==2;}
+    else {c=0}
+  }
+  function calculate(){
+    
+  }
+}
