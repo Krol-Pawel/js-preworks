@@ -1,8 +1,6 @@
-let argButtonName, 
-  buttonTest,
-  ButtonRock = document.getElementById('button-rock'),
-  ButtonPaper = document.getElementById('button-paper'),
-  ButtonScissors = document.getElementById('button-scissors');
+const buttonRock = document.getElementById('button-rock'),
+  buttonPaper = document.getElementById('button-paper'),
+  buttonScissors = document.getElementById('button-scissors');
 
 
 /**
@@ -16,7 +14,7 @@ function buttonClicked(argButtonName) {
 // buttonTest.addEventListener('click', function(){ buttonClicked('Guzik TEST'); });
 
 
-let argComputerMove, argMoveId, argPlayerMove, computerMove, playerInput, playerMove, randomNumber;
+// let computerMove, playerMove, randomNumber;
 
 /**
  * Describe this function...
@@ -57,25 +55,25 @@ function displayResult(argPlayerMove, argComputerMove) {
 // console.log('wybór ruchu gracza to: ' + playerInput);
 // playerMove = getMoveName(playerInput);
 // console.log('ruch gracza to: ' + playerMove);
-playerMove = argButtonName;
-randomNumber = Math.floor(Math.random() * 3 + 1);
+const playerMove = argButtonName;
+const randomNumber = Math.floor(Math.random() * 3 + 1);
 console.log('wylosowana liczba to: ' + randomNumber);
-computerMove = getMoveName(randomNumber);
+const computerMove = getMoveName(randomNumber);
 console.log('ruch komputera to: ' + computerMove);
 displayResult(playerMove, computerMove);
 // function result()
 }
 
-ButtonRock.addEventListener('click', function(){ buttonClicked('kamień'); });
-ButtonPaper.addEventListener('click', function(){ buttonClicked('papier'); });
-ButtonScissors.addEventListener('click', function(){ buttonClicked('nożyce'); })
+buttonRock.addEventListener('click', function(){ buttonClicked('kamień'); });
+buttonPaper.addEventListener('click', function(){ buttonClicked('papier'); });
+buttonScissors.addEventListener('click', function(){ buttonClicked('nożyce'); })
 
 function result() {
 
   var computersite = document.getElementById('computersite').Value
   console.log (computersite)
   var yoursite = document.getElementById('yoursite').Value
-  console.log (yoursite)
+  console.log(yoursite)
   function score(){ 
     if (printMessage="wygrywasz") {a==1;}
     else if (printMessage="przegrywasz") {a==2;}
